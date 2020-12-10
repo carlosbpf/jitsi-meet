@@ -15,6 +15,7 @@ def vcode = (int) (((new Date().getTime() / 1000) - 1546297200) / 10)
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
+    ndkVersion = "21.1.6352462"
 
     packagingOptions {
         exclude 'lib/*/libhermes*.so'
