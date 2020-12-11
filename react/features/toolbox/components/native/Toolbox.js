@@ -120,8 +120,9 @@ class Toolbox extends PureComponent<Props> {
                 {/*    styles = { buttonStylesBorderless }*/}
                 {/*    toggledStyles = { toggledButtonStyles } />*/}
                 <ToggleCameraButton
-                    showLabel = { true }
-                    styles = { buttonStylesBorderless } />
+                    showLabel = { false }
+                    styles = { buttonStyles }
+                    toggledStyles = { toggledButtonStyles } />
             </View>
         );
     }
