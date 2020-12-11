@@ -127,7 +127,7 @@ class LonelyMeetingExperience extends PureComponent<Props> {
 function _mapStateToProps(state): $Shape<Props> {
     const { disableInviteFunctions } = state['features/base/config'];
     const { conference } = state['features/base/conference'];
-    const flag = getFeatureFlag(state, INVITE_ENABLED, true);
+    const flag = getFeatureFlag(state, INVITE_ENABLED, false);
 
     return {
         _isInviteFunctionsDiabled: !flag || disableInviteFunctions,
