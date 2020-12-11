@@ -15,6 +15,7 @@ import VideoMuteButton from '../VideoMuteButton';
 
 import OverflowMenuButton from './OverflowMenuButton';
 import styles from './styles';
+import ToggleCameraButton from './ToggleCameraButton';
 
 /**
  * The type of {@link Toolbox}'s React {@code Component} props.
@@ -115,9 +116,12 @@ class Toolbox extends PureComponent<Props> {
                 <VideoMuteButton
                     styles = { buttonStyles }
                     toggledStyles = { toggledButtonStyles } />
-                <OverflowMenuButton
-                    styles = { buttonStylesBorderless }
-                    toggledStyles = { toggledButtonStyles } />
+                {/* <OverflowMenuButton */}
+                {/*    styles = { buttonStylesBorderless }*/}
+                {/*    toggledStyles = { toggledButtonStyles } />*/}
+                <ToggleCameraButton
+                    showLabel = { true }
+                    styles = { buttonStylesBorderless } />
             </View>
         );
     }
